@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+     .main{
+        background-color: black;
+        flex-direction: row;
+        padding: 12px;
+        padding-left: 22px;
+        display: flex;
+     }
+     .logo {
+        color: white;
+     }
+     .link,
+     a{
+        list-style: none;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-right: 22px;
+        padding-top: 10px;
+        font-weight: lighter;
+     }
+     .active a {
+        background-color: rgb(173, 138, 138);
+        color: beige;
+        border-radius: 10px;
+        padding: 10px;
+     }
+a:hover {
+    color: red;
+}
+    </STYle>
+</head>
+<body>
+   <div class="main">
+    <div class="logo">
+        <h1>brand logo</h1>
+       </div>
+        <div class="link">
+            <div class="active"><a href="">home</a></div>
+            <div><a href="">about</a></div>
+            <div><a href="">services</a></div>
+            <div><a href="">contact</a></div>
+            <div><a href="">blog</a></div>
+        <!-- </div> -->
+    </div>
+   </div>
+</body>
+</html>
