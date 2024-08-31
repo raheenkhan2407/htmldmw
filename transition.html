@@ -9,12 +9,26 @@
             width: 100px;
             height: 100px;
             background-color: rgb(32, 69, 102);
-            transition: width 2s , height 4s , transform 2s;
+            transition: width 2s , height 4s , transform 2s , linear 2s;
+            animation-name: first;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
         }
+       @keyframes first{
+        0% { background-color: aqua; left : 0px ; top : 25px}
+        25% { background-color: bisque; left : 50px ; top : 75px}
+        50% { background-color: blueviolet; left : 100px ; top : 125px}
+        75% { background-color: rgb(117, 96, 96); left : 50px ; top : 75px }
+         100% { background-color: pink; left : 0px ; top : 0px} 
+       }
+      
         div:hover{
             width: 100px;
             height: 100px;
             transform: rotate(180deg);
+            border-radius: 100%;
+            
         }
     </style>
 </head>
