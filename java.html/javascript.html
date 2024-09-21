@@ -124,21 +124,62 @@
 //     alert ( "invalid per");
 //  }
 
- var username = prompt ( " enter username");
- var password = prompt( "enter password");
+//  var username = prompt ( " enter username");
+//  var password = prompt( "enter password");
 
- if (username != "" && password != "") {
-   if (username == "admin" && password == "admin123") {
-      alert ("login successfully");
-   }
-   else{
-      alert ("login failed");
-   }
- }
- else{
-   alert ( "please enter username and password");
- }
+//  if (username != "" && password != "") {
+//    if (username == "admin" && password == "admin123") {
+//       alert ("login successfully");
+//    }
+//    else{
+//       alert ("login failed");
+//    }
+//  }
+//  else{
+//    alert ( "please enter username and password");
+//  }
 
+// var designation = prompt(" enter designation");
+// switch (designation) {
+//    case "manager":
+//       alert (2000000);
+//       break;
+//       case " ass manager":
+//       alert (1000000);
+//       break;
+//       case "developer":
+//       alert (100000);
+//       break;
+//       case "intern":
+//       alert (50000);
+//       break;
+//    default:
+//       alert ("invalid data");
+//       break;
+// }
+ var num1 =parseInt(prompt("enter num1"));
+ var num2 =parseInt(prompt("enter num2"));
+ var operator= (prompt("enter operator"));
+ switch (operator) {
+   case "+":
+      alert (num1 + num2);
+      break;
+      case "-":
+      alert (num1 - num2);
+      break;
+      case "*":
+      alert (num1 * num2);
+      break;
+      case "/":
+      alert (num1  / num2);
+      break;
+      case "%":
+      alert (num1 % num2);
+      break;
+   default:
+      alert ("invalid operator");
+      break;
+ }
 </script>
 
 </body>
