@@ -99,29 +99,44 @@
 //     alert("you are not eligible for driving");
 // }
 
-var per = parseInt(prompt("enter percentage"))
-if (per >= 80) {
-    alert ("you have obtained A+")
-} else if (per <= 80 && per >= 70) {
-   alert("you have obtained A");
-}
- else if (per <= 70 && per >= 60) {
-   alert("you have obtained B");
-}
-else if (per <= 60 && per >= 50) {
-   alert("you have obtained C");
-}
- else if (per <= 50 && per >= 40) {
-   alert("you have obtained D");
-}
- else if (per <= 40 && per >= 33) {
-   alert("you have obtained E");
-}
- else if (per = 33){
-    alert ("you are fail");
+// var per = parseInt(prompt("enter percentage"))
+// if (per >= 80) {
+//     alert ("you have obtained A+")
+// } else if (per <= 80 && per >= 70) {
+//    alert("you have obtained A");
+// }
+//  else if (per <= 70 && per >= 60) {
+//    alert("you have obtained B");
+// }
+// else if (per <= 60 && per >= 50) {
+//    alert("you have obtained C");
+// }
+//  else if (per <= 50 && per >= 40) {
+//    alert("you have obtained D");
+// }
+//  else if (per <= 40 && per >= 33) {
+//    alert("you have obtained E");
+// }
+//  else if (per = 33){
+//     alert ("you are fail");
+//  }
+//  else {
+//     alert ( "invalid per");
+//  }
+
+ var username = prompt ( " enter username");
+ var password = prompt( "enter password");
+
+ if (username != "" && password != "") {
+   if (username == "admin" && password == "admin123") {
+      alert ("login successfully");
+   }
+   else{
+      alert ("login failed");
+   }
  }
- else {
-    alert ( "invalid per");
+ else{
+   alert ( "please enter username and password");
  }
 
 </script>
