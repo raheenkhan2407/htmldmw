@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        wridth: 500px;
+
+    }
+</style>
+<body>
+    <div class="container">
+     <div>
+        <labal for="">Inch</labal>><br>
+        <labal type="tect" name="" id="inch">
+    <div>
+    </div>
+         <labal for="">Feel</labal><br>
+         <labal type="text" name="" id="feet">
+    <div>
+</div>
+<script>
+    var inch =document.getElementById('inch');
+    var feet = document.getElementById('feet');
+
+    inch.addEventListener('input', function()
+        var i =this.value;
+        var f= i/12;
+        feet.value = f;
+    }
+</script>
+</body>
+</html>
