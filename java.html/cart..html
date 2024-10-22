@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .con{
+        width: 300px;
+        min-height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: aqua;
+        font-size: 40px;
+        font-weight: 900;
+        border-radius: 20px;
+        margin: 100px;
+    }
+</style>
+<body>
+  <div class="con">
+    <div id="mins">-</div>
+    <div id="num">0</div>
+    <div id="plus">+</div>
+  </div>
+  <script>
+    var mins = document.getgetElemenById('mins');
+    var num = document.getElementById('num');
+    var plus = document.getElementById('plus');
+    var inc = documentgetElementById('inc')
+    var a = 0
+    var p=2500
+
+    mins.addEventtistener('click', function(){
+        a--;
+        num.innerHTML = a;
+        inctect
+    })
+    plus.addEventtistener('click', function(){
+        a++;
+        num.innerHTML = a;
+    })
+  </script>
+</body>
+</html>
