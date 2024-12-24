@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+</head>
+<body>
+    <style>
+        #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+        #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+        </style>
+    <div id="draggable" class="ui-widget-content"  >
+    <img src="image/apple.jpg"  height="100px" width="100px"></div>
+      <div id="droppable" class="ui-widget-header">
+        <p>A</p>
+      </div>
+      <script>
+        $( function() {
+          $( "#draggable" ).draggable();
+          $( "#droppable" ).droppable({
+            drop: function( event, ui ) {
+              $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                  .html( "APPLE" );
+            }
+          });
+        } );
+        </script>
+</body>
+</html>
