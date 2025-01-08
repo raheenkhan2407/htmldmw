@@ -6,21 +6,23 @@
     <title>Document</title>
 </head>
 <body>
- 
-<input type="text" name ="" id="sfruit" placeholder="enter a fruit name">
-<button type ="submit" onclick ="myFunction()"</button>
-<script>
-  var fruits = ["apple","banana","mango"];
-  console.log(fruits);
-
- var fruits = parseInt("enter a fruit")
-  document.getElementById = "sfruit";
-  if (fruit  == "sfruit") {
-      alert ("found");
-  } else {
-      alert ("not found");
-      }
-</script>
+    <input type="text" name="" id="v_fruit" placeholder="Enter a fruit name">
+    <button type="submit" onclick="show()">Submit</button>
+    
+    <script>
+    function show() {
+        var fruits = document.getElementById('v_fruit').value; 
+        var v_fruit = ["mango", "apple", "kiwi"];
+    
+    
+        if (v_fruit.includes(fruits)) {
+        document.write("Found");
+    } else {
+        document.write("Not found");
+    }
+    }
+    </script>
+    
 
 </body>
 </html>
