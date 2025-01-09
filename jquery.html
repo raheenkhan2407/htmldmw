@@ -4,121 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+     crossorigin="anonymous">
 </head>
 <body>
-    <div>
-        <h1>jquery class 2</h1>
-    </div>
-     <button id="hidebtn">hide</button>
-     <button id="showbtn">show</button>
-     <button id="togglebtn">toggle</button>
-
-     <button id="slideup">slideup</button>
-     <button id="slidedown">slidedown</button>
-     <button id="slidetoggle">slidetoggle</button>
-
-     <button id="fadein">fadein</button>
-     <button id="fadeout">fadeout</button>
-     <button id="fadetoggle">fade toggle</button>
-     <button id="fadeto">fade to</button> 
-
-    <script>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputName1" class="form-label"> Name</label>
+            <input type="name" class="form-control" id="n_name"> 
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">email</label>
+            <input type="email" class="form-control" id="e_email">
+        <button  id="new" type="submit">submit</button>
+  </form>
+<script>
         $(document).ready(function (){
-        $("div").css({
-        "border": "2px groove blue",
-        "background-color" : "pink",
-        "padding" : "20px",
-        "font-size" : "30px",
-        "text-align" : "center",
-        });
-        $("#hidebtn").click(function(){
-            $("div").hide(3000)
-        })
-        $("#showbtn").click(function(){
-            $("div").show(3000)
-        })
-        $("#togglebtn").click(function(){
-            $("div").toggle(3000)
-        })
-        $("#slideup").click(function(){
-            $("div").slideUp (3000)
-        })
-        $("#slidedown").click(function(){
-            $("div").slideDown(3000)
-        })
-        $("#slidetoggle").click(function(){
-            $("div").slideToggle(3000)
-        })
-        $("#fadein").click(function(){
-            $("div").fadein(3000)
-        })
-        $("#fadeout").click(function(){
-            $("div").fadeout(3000)
-        })
-        $("#fadetoggle").click(function(){
-            $("div").fadeToggle(3000)
-        })
-        $("#fadeto").click(function(){
-            $("div").fadeto(3000 , 0.5)
-        })
-  });
-
-
-  
-  $("div").click(function () {
-        $(this).css({
-            "background-color" : "lightgreen"  
-        })
-    })
-    $("div").mouseenter(function () {
-        $(this).css({
-            "background-color" : "orange"  
-        })
-    })
-    $("div").contextmenu(function () {
-        $(this).css({
-            "background-color" : "aqua"  
-        })
-    })
-    $("div").dblclick(function () {
-        $(this).css({
-            "background-color" : "pink"   
-         })
-        });
-
-
-        $("div").click(function () {
-        $(this).css({
-            "background-color" : "lightgreen"  
-        })
-    })
-    $("body").keydown(function () {
-        $(this).css({
-            "background-color" : "orange"  
-        })
-    })
-    $("body").keypress(function () {
-        $(this).css({
-            "background-color" : "aqua"  
-        })
-    })
-    $("body").keyup(function () {
-        $(this).css({
-            "background-color" : "pink"   
-         })
-        });
-
-
-
-
-
-
-
- </script>
+            $("#n_name").on("input")
+        }); 
+</script>
 </body>
 </html>
-      
-      
-     
