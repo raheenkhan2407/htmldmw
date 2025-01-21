@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <h1>JQUERY REVISION</h1>
+    </div>
+<button id="btnhide">hide</button>
+<button id="btnshow">show</button>
+<button id="btntoggle">toggle</button>
+
+<button id="fadeto">fadeto</button>
+<button id="fadein">fadein</button>
+<button id="fadeout">fadeout</button>
+<button id="fadetoogle">fadeToggle</button>
+
+<button id="slideup">slideup</button>
+<button id="slidedown">slidedown</button>
+<button id="slidetoggle">slidetoggle</button>
+
+<script>
+    $(document).ready(function () {
+
+    $("div").css({
+    "border": "2px inset green",
+    "backkground-color": "blue",
+    "padding":"20px",
+    "font-size":"20px",
+    "color":"pink",
+    "text-align":"center",
+})
+
+$(btnhide).click(function () {
+$("div").hide(3000)
+})
+
+$(btnshow).click(function () {
+$("div").show(3000)
+})
+
+$(btntoggle).click(function () {
+$("div").toggle(3000)
+})
+
+$("#fadeup").click(function () {
+$("div").fadeUp(3000)
+})
+
+$("#fadeout").click(function () {
+$("div").fadeout(3000)
+})
+
+$("#fadein").click(function () {
+$("div").fadein(3000)
+})
+
+$("#fadetoggle").click(function () {
+$("div").fadeToggle(3000)
+})
+
+$("#slideup").click(function () {
+$("div").slideUp(3000)
+})
+
+$("#slidedown").click(function () {
+$("div").slideDown(3000)
+})
+
+$("#slidetoggle").click(function () {
+$("div").slideToggle(3000)
+})
+
+$("div").click(function () {
+        $(this).css({
+            "background-color" : "lightgreen"  
+        })
+    })
+    $("body").keydown(function () {
+        $(this).css({
+            "background-color" : "orange"  
+        })
+    })
+    $("body").keypress(function () {
+        $(this).css({
+            "background-color" : "aqua"  
+        })
+    })
+    $("body").keyup(function () {
+        $(this).css({
+            "background-color" : "pink"   
+         })
+        });
+    });
+</script>
+</body>
+</html>
